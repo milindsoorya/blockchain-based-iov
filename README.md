@@ -1,12 +1,9 @@
 # eth-messaging
-![Screenshot](https://www.dropbox.com/s/6p5wxxmwobrja83/ethMessagingScreenshot.png?raw=1)
+![Alt text](/Screenshot.jpg?raw=true "screenshot")
 
-This project is my solution for a challenge proposed at my current company [ioBuilders](https://io.builders/).
 
-In summary, the challenge consists in a dapp for sending messages between ethereum accounts. The following points should be achieved:
-* Message data should be stored off-chain in an external repository.
-* Only the receiver of the message should be able to read the message, no one else.
-* It should be possible to send anonymous messages.
+This project is inspired from https://github.com/lfrKain/eth-messaging
+
 
 ### Tech stack
 * [Solidity](https://solidity.readthedocs.io/en/v0.4.25/index.html) as the language for the smart contract. Smart contract is based on this [EIP](https://github.com/ethereum/EIPs/issues/802).
