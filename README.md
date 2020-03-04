@@ -1,5 +1,7 @@
 # eth-messaging
-![Alt text](/Screenshot.jpg?raw=true "screenshot")
+<div align="center">
+    <img src="Screenshot.png" width="400px"</img> 
+</div>
 
 
 This project is inspired from https://github.com/lfrKain/eth-messaging
