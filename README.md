@@ -1,6 +1,6 @@
 # eth-messaging
 <div align="center">
-    <img src="Screenshot.xcf"</img> 
+    <img src="Screenshot.xcf" width="400px"</img> 
 </div>
 
 
