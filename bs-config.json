@@ -1,0 +1,7 @@
+{
+  "open": false,
+  "ghostMode": false,
+  "server": {
+    "baseDir": ["./src", "./build/contracts"]
+  }
+}

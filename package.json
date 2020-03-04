@@ -1,0 +1,35 @@
+{
+  "name": "eth-messaging",
+  "version": "1.0.0",
+  "description": "Web dapp for sending messages between ethereum accounts",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "ganache-cli": "^6.2.3",
+    "lite-server": "^2.4.0",
+    "solidity-coverage": "^0.5.11",
+    "solium": "^1.1.8",
+    "truffle": "^4.1.14",
+    "truffle-assertions": "^0.6.3"
+  },
+  "scripts": {
+    "truffle": "node_modules/truffle/build/cli.bundled.js",
+    "solium": "node_modules/solium/bin/solium.js -d contracts/",
+    "ganache-cli": "node_modules/ganache-cli/cli.js",
+    "migrate": "npm run truffle migrate -- --reset",
+    "ganache": "npm run ganache-cli -- --quiet --account='0x9b3b72cc4b29b4e7d0c39962ca3a7db11e1e60a1353e39705d82b36012694caf,100000000000000000000' --account='0xeeb80a1e35c9db4dabd237edb5fd2827312ac2ce32723f163d067169c870eff1,100000000000000000000' --account='0xb5a3091a455b493dab6f53825b92301f2f77ea9bbe2ff4bb5e65486e97126b39,100000000000000000000' --account='0xe5a90dceea42ad2ec7360f08185089ba6187f3422d974872cff5219801f8c84b,100000000000000000000'",
+    "dev": "npm run ganache | (npm run migrate && lite-server)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lfrKain/eth-messaging.git"
+  },
+  "author": "https://github.com/lfrKain",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lfrKain/eth-messaging/issues"
+  },
+  "homepage": "https://github.com/lfrKain/eth-messaging#README"
+}

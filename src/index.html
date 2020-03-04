@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BLOCKCHAIN BASED SECURED DATA SHARING</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+   
+  </head>
+  <body>
+   
+    
+    <div id="backgroundImage">
+
+      <div class="main">
+  
+     
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-push-2">
+          <h1 class="text-center"><b>BLOCKCHAIN BASED SECURED DATA SHARING IN IOV</b></h1>
+          <div class="dropdown text-center">
+            <h5 class="text-center"><b>PROFILE</b></h5>
+              <div class="dropdown-content">
+               <h4 style="display: inline;">Vehicle No : </h4><h4 style="display: inline;" id="userName"></h4> <br>
+               <h5 style="display: inline;">Address : </h5><h5 style="display: inline;" id="addr"></h5>
+              </div>
+          </div>
+          
+          <hr/>
+          <br/>
+          <div class="text-center"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">JOURNEY</button></div><br/>
+        </div>
+      </div>
+      <div>
+        <h2><b>SEND MESSAGE</b></h2>
+        <div class="form-group">
+          <!-- <label for="receiver">Receiver:</label>
+          <select class="form-control" id="receiver">
+          </select> -->
+
+
+          <label for="receiver">Receiver:</label>
+          <div class="select-style">
+            
+          <select class="form-control list" id="receiver">
+          </select>
+          </div>
+
+<br><br>
+
+
+        <div class="form-group">
+          <label for="message"><b>Message:</b></label>
+          <textarea class="form-control" id="message" rows="5" maxlength="600"></textarea>
+        </div>
+        <div class="form-group">
+          <input id="anonymousCheck" type="checkbox"> <label for="anonymousCheck" class="anonymousChecks"><b>Send as anonymous</b></label>
+        </div>
+        <button id="sendMessageButton" type="button" class="btn btn-secondary"><b>Send message</b></button>
+        <button id="importPrivateKey" type="button" class="btn btn-secondary"><b>Import private key</b></button>
+        <br><br>
+        <button id="police" type="button" class="btn btn-danger"><b>Police Checking</b></button>
+        <button id="trafficjam" type="button" class="btn btn-warning"><b>Traffic Jam</b></button>
+        <button id="badweather" type="button" class="btn btn-success"><b>Bad Weather</b></button>
+      </div><br>
+      <div id="successAlert" class="alert alert-success" role="alert" style="display: none"></div>
+      <div id="errorAlert" class="alert alert-danger" role="alert" style="display: none"></div>
+      <div>
+        <h3>Received messages <span id="newMessage" class="badge badge-secondary" style="display: none">New message</span></h3>
+        <div id="messages">
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="pkModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="modalLabel">Import private key</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <input id="pk" type="text" class="form-control" id="recipient-name" maxlength="65" placeholder="Ethereum private key">
+                <label>Enter the private key</label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button id="confirmPk" type="button" class="btn btn-primary">Confirm</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- Modal -->
+   <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title text-center">Complete Your Journey Details !</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Source</span>
+              </div>
+              <input type="text" class="form-control" placeholder="source name">
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Destination</span>
+              </div>
+              <input type="text" class="form-control" placeholder="destination name">
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form> 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/erebos.production.js"></script>
+    <script src="js/eth-ecies.js"></script>
+    <script src="js/ethereumjs-util.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
